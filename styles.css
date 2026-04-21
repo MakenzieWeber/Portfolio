@@ -188,10 +188,6 @@ footer {
     transition: transform 0.3s;
 }
 
-.skill-card:hover {
-    transform: translateY(-5px);
-}
-
 .skill-card h3 {
     color: #667eea;
     margin-bottom: 1rem;

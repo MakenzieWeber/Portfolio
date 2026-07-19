@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+  --cta-width: 180px;
+  --cta-height: 120px;
+  --cta-gap: 20px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -87,6 +93,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    align-items: start;
+}
+
+.gallery > a { /* center CTA inside grid cell */
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-item {
@@ -117,6 +129,50 @@ body {
     padding: 0 1rem 1rem 1rem;
     color: #666;
     font-size: 0.95rem;
+}
+
+/* CTA button classes: control length and height */
+.cta-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: var(--cta-width);
+  height: var(--cta-height);
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 6px;
+}
+
+/* Games: twice as long (plus a gap so visual length equals two buttons with spacing) */
+.cta-button.games {
+  width: calc(var(--cta-width) * 2 + var(--cta-gap));
+}
+
+/* Ensure images inside CTAs fit and keep same height visually */
+.cta-button img {
+  max-width: 90%;
+  max-height: calc(var(--cta-height) * 0.65);
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.cta-button .portfolio-label {
+  margin-top: 6px;
+  display:block;
+  color: #2c3e50;
+  font-weight:600;
+}
+
+.cta-button.centered {
+  margin: 0 auto;
 }
 
 /* About Section */
@@ -160,6 +216,11 @@ footer {
     .gallery {
         grid-template-columns: 1fr;
     }
+
+    .cta-button, .cta-button.games {
+        width: 90%;
+        max-width: 420px;
+    }
 }
 
 .skills {
@@ -198,50 +259,6 @@ footer {
     color: #555;
     margin: 0.5rem 0;
     font-size: 0.95rem;
-}
-
-/* New rules to center hero buttons and keep Games button centered */
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* CTA button container: fixed height to keep uniform heights, width controls length */
-.cta-button {
-  display: inline-block;
-  width: 180px; /* default button length */
-  height: 120px; /* fixed height for all buttons */
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* Games button: twice as long */
-.cta-button.games {
-  width: 360px;
-}
-
-.cta-button img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
-.cta-button .portfolio-label {
-  margin-top: 6px;
-  display:block;
-  color: #2c3e50;
-  font-weight:600;
-}
-
-.cta-button.centered {
-  margin: 0 auto;
 }
 
 /* Figure helper: wrapper sized to image and centers caption */

@@ -199,3 +199,23 @@ footer {
     margin: 0.5rem 0;
     font-size: 0.95rem;
 }
+
+/* New rules to center hero buttons and keep Games button centered */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button img {
+  max-width: 180px; /* adjust as needed for your button images */
+  height: auto;
+  display: block;
+}
+
+.cta-button.centered {
+  display: inline-block;
+  margin: 0 auto;
+}

@@ -199,3 +199,25 @@ footer {
     margin: 0.5rem 0;
     font-size: 0.95rem;
 }
+
+/* Figure helper: wrapper sized to image and centers caption */
+.figure {
+  display: inline-block;       /* shrinkwrap to the image width */
+  max-width: 100%;
+  text-align: center;          /* center caption under image */
+  vertical-align: top;         /* keeps layout tidy when alongside other content */
+  margin: 12px auto;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.figure .caption, .figure figcaption {
+  margin-top: 10px;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}

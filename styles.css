@@ -216,7 +216,7 @@ footer {
 /* Figure helper: wrapper sized to image and centers caption */
 .figure {
   display: inline-block;       /* shrinkwrap to the image width */
-  max-width: 100%;
+  max-width: 200%;
   text-align: center;          /* center caption under image */
   vertical-align: top;         /* keeps layout tidy when alongside other content */
   margin: 12px auto;

@@ -16,6 +16,13 @@ body {
     padding: 0 20px;
 }
 
+
+.container2 {
+    max-width: 2100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Navigation Bar */
 .navbar {
     background-color: #2c3e50;

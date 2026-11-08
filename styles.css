@@ -24,7 +24,7 @@ body {
 }
 
 .games-section .games-button-image {
-    width: 600px;
+    width: 450px;
     max-width: 90vw;
     height: auto;
     object-fit: contain;

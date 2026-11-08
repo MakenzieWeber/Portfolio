@@ -23,11 +23,11 @@ body {
     padding: 0 20px;
 }
 
-
-.container3 {
-    max-width: 4600px;
-    margin: 0 auto;
-    padding: 0 20px;
+.games-section .games-button-image {
+    width: 600px;
+    max-width: 90vw;
+    height: auto;
+    object-fit: contain;
 }
 
 /* Navigation Bar */

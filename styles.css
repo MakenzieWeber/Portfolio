@@ -23,6 +23,13 @@ body {
     padding: 0 20px;
 }
 
+
+.container3 {
+    max-width: 3600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Navigation Bar */
 .navbar {
     background-color: #2c3e50;

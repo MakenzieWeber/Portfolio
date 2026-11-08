@@ -23,11 +23,21 @@ body {
     padding: 0 20px;
 }
 
-.games-section .games-button-image {
-    width: 450px;
+.games-button-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.games-button-link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.games-button-image {
+    display: block;
+    width: 500px;
     max-width: 90vw;
     height: auto;
-    object-fit: contain;
 }
 
 /* Navigation Bar */

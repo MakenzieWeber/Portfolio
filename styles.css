@@ -24,7 +24,7 @@ body {
 }
 
 .games-button-container {
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -35,7 +35,7 @@ body {
 
 .games-button-image {
     display: block;
-    width: 530px;
+    width: 590px;
     max-width: 90vw;
     height: auto;
 }
